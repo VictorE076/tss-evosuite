@@ -2,39 +2,36 @@
 
 **Proiect:** Automatic Evolutionary Test Suite Generation cu EvoSuite
 
-**Echipa:** Economu Victor, Radu Alexandru-Mihail
-
+**Echipa:** Economu Victor, Radu Alexandru-Mihail  
 **Grupa:** 506
 
-## 1. Organizarea proiectului
+## 1. Organizare si configurare
 
 - **Instrument:** ChatGPT.
-- **Scop:** Asistenta pentru planificarea proiectului.
-- **Solicitare:** Analiza cerintelor si propunerea unor exemple demonstrative.
-- **Rezultat:** Recomandari privind organizarea si exemplele Java.
-- **Contributie umana:** Selectarea exemplelor finale, adaptarea planului si organizarea etapelor de lucru.
-- **Validare:** Verificarea compatibilitatii planului cu cerintele proiectului.
+- **Scop:** Planificarea proiectului si configurarea tool-ului EvoSuite.
+- **Solicitare:** Brainstorming pentru exemple ce evidentiaza cat mai clar, utilitatea tool-ului.
+- **Rezultat:** Propuneri de implementare.
+- **Contributie umana:** Alegerea exemplelor, configurarea mediilor si organizarea activitatilor intre membrii echipei.
+- **Validare:** Verificarea cerintelor si functionarii instrumentelor (Java, Maven, JUnit si EvoSuite).
 
-## 2. Demonstratia MeetingRoomScheduler
-
-- **Instrument:** ChatGPT.
-- **Scop:** Asistenta pentru implementare si utilizarea EvoSuite.
-- **Solicitare:** Propunerea unui exemplu Java si explicarea configurarii instrumentului.
-- **Rezultat:** Cod Java initial si recomandari tehnice.
-- **Contributie umana:** Integrarea codului, configurarea mediului de dezvoltare, utilizarea EvoSuite, executarea testelor si verificarea rezultatelor.
-- **Validare:** Compilare reusita, 6 teste generate de EvoSuite, 100% Branch Coverage raportat si executie JUnit reusita.
-
-## 3. Evaluarea testelor generate
+## 2. MeetingRoomScheduler - Economu Victor
 
 - **Instrument:** ChatGPT.
-- **Scop:** Asistenta pentru proiectarea unui experiment de mutation testing.
-- **Solicitare:** Identificarea unei modificari controlate care poate fi detectata de suita generata.
-- **Rezultat:** Propunerea modificarii operatorului `<=` in `<`.
-- **Contributie umana:** Aplicarea modificarii, executarea experimentului, examinarea rezultatelor si restaurarea codului.
-- **Validare:** Testul `test5()` a detectat modificarea. Dupa restaurarea implementarii, toate cele 6 teste au trecut.
+- **Scop:** Asistenta pentru implementare.
+- **Solicitare:** Exemplu clasa Java.
+- **Rezultat:** Cod initial.
+- **Contributie umana:** Integrarea codului, generarea testelor cu EvoSuite, analiza rezultatelor si experimentul de mutation testing.
+- **Validare:** 6 teste trecute, 100% Branch Coverage; mutant detectat.
+
+## 3. TrafficLightController - Radu Alexandru-Mihail
+
+- **Instrument:** Gemini.
+- **Scop:** Asistenta pentru implementare.
+- **Solicitare:** Exemplu clasa Java.
+- **Rezultat:** Cod initial si recomandari tehnice.
+- **Contributie umana:** Integrarea, generarea testelor cu EvoSuite si investigarea (ambii coechipieri) a diferentei dintre `case YELLOW` si `default` in clauza SWITCH.
+- **Validare:** 2 teste trecute; 90% Branch Coverage initial, 100% cu `default` in clauza SWITCH.
 
 ---
 
-**Concluzie:** ChatGPT a fost utilizat ca instrument de asistenta pentru planificare, implementare si explicatii tehnice. Studentii sunt responsabili pentru integrarea solutiilor, realizarea demonstratiilor, verificarea rezultatelor si prezentarea proiectului.
-
-Documentatia va fi actualizata pe masura realizarii urmatoarelor activitati.
+**Concluzie:** AI a fost utilizat pentru asistenta tehnica. Studentii au realizat configurarea, experimentele practice, verificarea rezultatelor si analiza comportamentului EvoSuite.
